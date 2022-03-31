@@ -1,0 +1,605 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+html,body{
+	height: 100%;
+}
+
+/* HEADER */
+
+header{
+    padding: 20px 2%;
+}
+
+header .logo img{
+    float: left;
+    width: 236px;
+}
+
+nav.menu-mobile{
+    display: none;
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-image: url('./imagens/menu-mobile.png');
+    background-size: 100% 100%;
+    display: none;
+    margin-top: 7px; 
+    cursor: pointer;
+}
+
+nav.menu-mobile ul{
+    z-index: 999;
+    display: none;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background-color: white;
+}
+
+nav.menu-mobile ul li{
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+header nav.menu-desktop{
+    float: right;
+}
+
+header nav.menu-desktop ul{
+    padding: 8px 0;
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    float: left;
+    font-size: 13px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+header ul a{
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+/* MOSAICO*/
+
+.mosaico-single{
+    float: left;
+    width: calc(100% / 6);
+}
+
+.img-mosaico-single{
+    width: 100%;
+    padding-top: 100%;
+    background-color: #ccc;
+    border: 5px solid white;
+    background-image: url(./imagens/dentes.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* SERVIÇOS*/
+section.servicos > .container{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -30px;
+    text-align: center;
+}
+
+section.servicos > .container .box-servico{
+    background-image: url('./imagens/icone_dente.png');
+    background-size: 18px 18px;
+    background-position: center calc(100% - 5px);
+    background-repeat: no-repeat;
+}
+
+section.servicos > .container .box-servico h2{
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+}
+
+section.servicos > .container .box-servico p{
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+    margin-top: 8px;
+}
+
+section.servicos > .container .box-servico:nth-of-type(1){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+}
+
+section.servicos > .container .box-servico:nth-of-type(2){
+    width: 40%;
+    padding: 60px 2%;
+    background-color: #688293;
+    background-image: none;
+}
+
+section.servicos > .container .box-servico:nth-of-type(3){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+}
+
+/* PERFIL */
+
+section.perfil-container{
+    padding: 40px 0;
+}
+
+section.perfil-container .container{
+    max-width: 800px;
+}
+
+section.perfil-container .perfil-wraper{
+    padding-top: 55%;
+    position: relative;
+}
+
+section.perfil-container .perfil-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.perfil-container .img-perfil{
+    width: 45%;
+    height: 100%;
+    background-image: url('./imagens/img_perfil.png');
+    background-size: 100% 100%;
+}
+
+section.perfil-container .texto-perfil{
+    width: 60%;
+    padding: 0 30px;
+}
+
+section.perfil-container .texto-perfil h2{
+    color: #698293;
+    font-size: 18px;
+}
+
+section.perfil-container .texto-perfil p{
+    color: #4b4b4b;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* VIDEOS */
+
+section.videos{
+	padding:50px 0;
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+}
+
+section.videos .box-video{
+	display: inline-block;
+    width: calc(95% / 3);
+    position: relative;
+    margin-left: 1vw;
+	/*background-color: green;*/
+	padding-top:calc((95% / 3) * 0.6);
+}
+
+section.videos iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* TRATMENTOS */
+
+section.tratamentos{
+    padding: 70px 0;
+}
+
+section.tratamentos > .container{
+    padding: 50px 0;
+    background-color: #edf0f1;
+}
+
+section.tratamentos .tratamento-container{
+    float: left;
+    width: 33.3%;
+}
+
+section.tratamentos .tratamento-single{
+    padding: 30px;
+}
+
+section.tratamentos > .container > h2{
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+    padding: 40px;
+}
+
+section.tratamentos .tratamento-single h2{
+    font-size: 18px;
+    color: #737373;
+}
+
+section.tratamentos .tratamento-single p{
+    padding: 10px 0;
+    font-size: 13px;
+    color: #b4b4b4;
+}
+
+/* DEPOIMENTOS */
+
+section.depoimentos > h2{
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+}
+
+section.depoimentos > .container{
+    padding: 60px 0;
+    max-width: 700px;
+}
+
+section.depoimentos .depoimento-single{
+    text-align: center;
+    width: 100%;
+    padding: 0 2%;
+}
+
+section.depoimentos .depoimento-single quote{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+section.depoimentos .nome-depoimento{
+    padding: 19px 0;
+}
+
+section.depoimentos .depoimento-single img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 4px;
+}
+
+section.depoimentos .depoimento-single span{
+    font-size: 13px;
+    position: relative;
+    top: 6px;
+    color: #b4b4b4;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* SOCIAL */
+/*instagram*/
+section.social .instagram-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #98a5ae;
+}
+
+section.social .instagram-chamada p{
+    color: white;
+    font-size: 13px;
+    padding: 10px 0;
+    line-height: 23px;
+}
+
+/* MOSAICO SOCIAL */
+
+section.social .mosaico-social{
+    position: relative;
+    margin: 0 auto;
+    width: 95%;
+}
+
+section.social .img-single-mosaico-social{
+    float: left;
+    border: 3px solid white;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-image: url(./imagens/dentes.jpg);
+    background-position: center;
+    background-size: cover;
+    
+} 
+/*facebook*/
+section.social .facebook-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #576975;
+}
+
+section.social .facebook-chamada p{
+    color: white;
+    font-size: 13px;
+    padding: 10px 0;
+    line-height: 23px;
+}
+
+/* CONTATO */
+
+section.contato{
+    padding: 60px 2%;
+}
+
+.form-wraper{
+    float: left;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+section.contato > h2{
+    color: #698293;
+    font-size: 18px;
+    text-align: center;
+}
+
+section.contato form{
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+section.contato .form-wraper span{
+    font-size: 18px;
+    color: #b4b4b4;
+    margin-top: 15px;
+}
+
+section.contato .form-wraper input[type=text]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: none;
+    border-bottom: 1px solid #dadada;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+section.contato .form-wraper input[type=text]::placeholder{
+    color: #dadada;
+}
+
+section.contato .form-wraper input[type=text]:focus, .form-wraper textarea{
+    outline: none;
+}
+
+.form-wraper textarea{
+    width: 100%;
+    padding: 15px;
+    height: 121px;
+    resize: none;
+    border: 1px solid #dadada;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+section.contato .form-wraper input[type=submit]{
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    border: 0;
+    background: #688293;
+    color: white;
+    display: inline-block;
+}
+
+section.contato .form-wraper input[type=submit]:hover{
+    background-color: #98a5ae;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 40px 2%;
+    background-color: #688293;
+}
+
+footer .container{
+    max-width: 1000px;
+}
+
+footer .footer-block{
+    float: left;
+    width: 33.3%;
+}
+
+footer .footer-block h2{
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+footer .footer-block p{
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+
+
+/*****/
+
+@media screen and (max-width:1024px){
+    section.social .img-single-mosaico-social{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    .mosaico-social > div:nth-of-type(1n+7){
+        display: none;
+    }
+    /*para escoder todos a partir da 7ª div*/
+}
+
+@media screen and (max-width: 768px){
+    /* HEADER */
+    nav.menu-desktop{
+        display: none;
+    }
+
+    nav.menu-mobile{
+        display: block;
+    }
+    
+    section.servicos > .container{
+        flex-direction: column;
+    }
+    
+    section.servicos > .container .box-servico:nth-of-type(1){
+        width: 90%;
+        padding: 30px 2%;
+        max-width: 350px;
+    }
+    
+    section.servicos > .container .box-servico:nth-of-type(2){
+        width: 94%;
+        padding: 50px 2%;
+        max-width: 380px;
+    }
+    
+    section.servicos > .container .box-servico:nth-of-type(3){
+        width: 90%;
+        padding: 30px 2%;
+        max-width: 350px;
+    }
+
+    section.servicos > .container .box-servico{
+        background-position: center calc(100% - 8px);
+    }
+
+    section.perfil-container .perfil-wraper{
+        padding-top: 0;
+    }
+
+    section.perfil-container .perfil-wraper2{
+        display: inline-block;
+        text-align: center;
+        height: auto;
+        position: static;
+    }
+
+    section.perfil-container .img-perfil{
+        width: 50%;
+        display: inline-block;
+        padding-top: 70%;
+        height: auto;
+    }
+    
+    section.perfil-container .texto-perfil{
+        width: 100%;
+        display: inline-block;
+        padding: 0 30px;
+        text-align: justify;
+    }
+
+    /* VIDEOS */
+    section.videos{
+        text-align: center;
+    }
+
+    section.videos .box-video{
+        float: none;
+        width: 70%;
+        display: inline-block;
+        padding-top:calc(70% * 0.6);
+    }
+    
+    section.videos iframe{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    section.social .img-single-mosaico-social{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+
+    .mosaico-social > div:nth-of-type(1n+4){
+        display: none;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer .footer-block{
+        float: none;
+        width: 100%;
+        margin: 30px 0;
+    }
+    
+}
+
+@media screen and (max-width: 580px){
+    section.perfil-container .img-perfil{
+        width: 80%;
+        padding-top: 110%;
+    }
+
+    section.videos .box-video{
+        width: 100%;
+        padding-top:calc(100% * 0.6);
+    }
+
+    .w50{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    header .logo img{
+        width: 200px;
+    }
+}
